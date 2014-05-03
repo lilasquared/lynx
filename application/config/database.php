@@ -48,9 +48,9 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'linux';
+$db['default']['hostname'] = '71.56.89.67';
+$db['default']['username'] = 'lynx_access';
+$db['default']['password'] = 'teshaunfrancis';
 $db['default']['database'] = 'lynx';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
