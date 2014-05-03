@@ -1,0 +1,39 @@
+body {
+  margin-top: 40px;
+}
+
+.modal-footer {
+  margin: 0px;
+}
+
+.form-group:last-child {
+  margin: 0px;
+}
+
+.btn {
+  overflow: hidden;
+}
+
+.btn-text {
+  display: none;
+}
+
+.btn-block.btn-lg {
+  font-size: 25px;
+  line-height: 30px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+#problemTabs {
+  vertical-align: top;
+}
+
+#worksheet {
+  margin-left: 50px;
+  display: inline-block;
+}
+
+.thumbnail.worksheet {
+  height: 100px;
+}
