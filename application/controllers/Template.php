@@ -46,7 +46,7 @@ class Template extends Base_Controller
   public function Create()
   {
     $title = $this->input->post('title');
-    $templateId = $this->worksheetFactory->create($title);
+    $templateId = $this->templateFactory->create($title);
     redirect("/Template/Edit/$worksheetId");
   }
 
@@ -56,12 +56,12 @@ class Template extends Base_Controller
    * @return void
    * @author Aaron Roberts
    **/
-  public function Edit($worksheetId)
+  public function Edit($templateId)
   {
-    $worksheet = $this->worksheetFactory->get($worksheetId);
-    $content['worksheet'] = $worksheet;
-    $this->page->set_pageHead('Customize your worksheet', $worksheet->title);
-    $this->page->add_content('worksheet/edit', $content);
+    $template = $this->templateFactory->get($templateId);
+    $content['template'] = $template;
+    $this->page->set_pageHead('Customize your template', $template->title);
+    $this->page->add_content('template/edit', $content);
     $this->load->view('templates/logged_in', $this->page);
   }
 
